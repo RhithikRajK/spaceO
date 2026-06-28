@@ -421,7 +421,7 @@ a, a:visited, a:hover, a:active {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    padding: 4rem 0;
+    padding: 6rem 0; /* Expanded padding for a clean, premium minimalist appearance */
     max-width: 100%;
   }
   
@@ -436,7 +436,7 @@ a, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: calc(100% - 2rem); /* Adjusted down to match header grid perfectly */
+    width: calc(100% - 2rem); 
     max-width: 100%;
     margin: 0 auto;
     gap: 0; 
@@ -449,14 +449,16 @@ a, a:visited, a:hover, a:active {
     width: 100%;
   }
   
+  /* Completely hide the View Works and Get Connect buttons on mobile layout layout viewports */
   .hero-actions { 
-    justify-content: center; 
+    display: none !important; 
   }
   
   .lead { 
     margin-left: auto; 
     margin-right: auto; 
     max-width: 100%;
+    margin-bottom: 0;
   }
   
   .hero-image-pane { 
@@ -514,12 +516,24 @@ a, a:visited, a:hover, a:active {
     width: 100%;
   }
   
+  /* Content fully scales nicely without overflowing edge cutouts */
   .horizontal-track .work-card { 
     width: 100% !important; 
+    max-width: 100% !important;
     transform: none !important; 
+    box-sizing: border-box;
+  }
+  
+  /* Ensures interior title text and descriptions don't wrap beyond screen edges */
+  .horizontal-track .work-card div {
+    padding: 1.5rem 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
   }
   
   .work-frame { 
     padding: 0.5rem; 
+    width: 100%;
+    box-sizing: border-box;
   }
 }
