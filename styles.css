@@ -433,7 +433,7 @@ a, a:visited, a:hover, a:active {
     max-width: 100%;
   }
   
-  /* NEW PRESENTATION PARADIGM: Premium Floating Glass/Surface Overlay Box for Ultimate Legibility */
+  /* Premium Floating Glass/Surface Overlay Box with optimized transparency */
   .hero-split-canvas { 
     display: flex;
     flex-direction: column;
@@ -443,15 +443,14 @@ a, a:visited, a:hover, a:active {
     gap: 0; 
     min-height: 65vh; 
     text-align: center;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.48);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 2rem;
-    box-shadow: 0 40px 100px rgba(18, 16, 13, 0.12);
+    box-shadow: 0 40px 100px rgba(18, 16, 13, 0.15);
     backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(0px);
-    padding: 2rem 2rem 2rem 2rem;
+    -webkit-backdrop-filter: blur(6.5px);
+    padding: 3.5rem 2rem;
     box-sizing: border-box;
-    text-shadow: 0px 2px 4px rgba(28, 24, 20, 0.1);
   }
   
   .hero-text-pane { 
@@ -461,13 +460,13 @@ a, a:visited, a:hover, a:active {
   
   /* Golden & Black mixed reflective text look */
   .hero-text-pane h1 {
-    background: linear-gradient(135deg, #ffffff 0%, #bd5703 50%, #13100e 85%, #d4af37 100%);
+    background: linear-gradient(135deg, #12100d 0%, #3a3227 50%, #b48a4b 85%, #d4af37 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-weight: 600;
-    filter: drop-shadow(0px 2px 4px rgba(28, 24, 20, 0.1));
+    font-weight: 595;
+    filter: drop-shadow(0px 2px 4px rgba(28, 24, 20, 0.15));
     margin-bottom: 0;
   }
   
@@ -476,7 +475,7 @@ a, a:visited, a:hover, a:active {
     display: none !important; 
   }
   
-  /* Hide paragraph block inside mobile viewports as requested */
+  /* Hide paragraph block inside mobile viewports */
   .lead { 
     display: none !important;
   }
@@ -536,10 +535,11 @@ a, a:visited, a:hover, a:active {
     width: 100%;
   }
   
-  /* Framed portfolio box matching layout system */
+  /* Framed portfolio box matching layout system with centered gap margins */
   .horizontal-track .work-card { 
-    width: 100% !important; 
+    width: calc(100% - 2rem) !important; 
     max-width: 100% !important;
+    margin: 0 auto !important;
     transform: none !important; 
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.92);
